@@ -1,8 +1,4 @@
-Listcoin
-
-Built using MinGW and Windows. Changed makefile.mingw.
-
-Requires addnode=x.x.x.x in listcoind.conf to connect nodes and setup network.
+h1 Listcoin
 
 Ports:
 P2P:51738
@@ -10,8 +6,28 @@ RPC:51737
 Test P2P:51998
 Test RPC:51997
 
-How to build for Windows:
+Requires addnode=x.x.x.x in listcoind.conf to connect nodes and setup network.
 
+===================================================
+
+h1 Сборка Ubuntu
+
+Зависимости:
+sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev libdb5.3++-dev libminiupnpc-dev
+
+LevelDB:
+cd src/leveldb
+make -f Makefile libleveldb.a libmemenv.a
+
+
+Сборка всего:
+cd src/
+make -f makefile.unix
+
+
+=============================================================
+
+h1 How to build for Windows:
 
 Качаем сразу mingw64 с gcc 4.9, perl
 
