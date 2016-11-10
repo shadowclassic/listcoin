@@ -1,4 +1,4 @@
-h1 Listcoin
+<h1>Listcoin</h1>
 
 Ports:
 P2P:51738
@@ -10,7 +10,7 @@ Requires addnode=x.x.x.x in listcoind.conf to connect nodes and setup network.
 
 ===================================================
 
-h1 Сборка Ubuntu
+<h1>Сборка Ubuntu</h1>
 
 Зависимости:
 sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev libdb5.3++-dev libminiupnpc-dev
@@ -27,7 +27,7 @@ make -f makefile.unix
 
 =============================================================
 
-h1 How to build for Windows:
+<h1>How to build for Windows:</h1>
 
 Качаем сразу mingw64 с gcc 4.9, perl
 
